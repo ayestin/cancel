@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="id" lang="id">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Reservation Hotel Room</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;display=swap" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+
+  <body>
+
+    <h1 class="form-title">Reservation Hotel Room</h1>
+
+    <div class="form-card">
+      <form action="#" method="post">
+
+        <fieldset class="section">
+          <legend>Personal Data</legend>
+          <ol class="form-list">
+            <li>
+              <label for="name">Name</label>
+              <input class="text" type="text" id="name" name="name" />
+            </li>
+
+            <li>
+              <label for="gender">Gender</label>
+              <input class="text" type="text" id="gender" name="gender" />
+            </li>
+
+            <li>
+              <label for="email">Email Address</label>
+              <input class="text" type="text" id="email" name="email" />
+            </li>
+
+            <li>
+              <label for="telp">Telp Number</label>
+              <input class="text" type="text" id="telp" name="telp" />
+            </li>
+          </ol>
+        </fieldset>
+
+        <fieldset class="section">
+          <legend>Reservation Detail</legend>
+          <ol class="form-list">
+            <li>
+              <label for="resname">Reservator Name</label>
+              <input class="text" type="text" id="resname" name="resname" />
+            </li>
+
+            <li>
+              <label for="bookdate">Booking Date</label>
+              <input class="text" type="text" id="bookdate" name="bookdate" />
+            </li>
+
+            <li>
+              <label for="roomtype">Room Type</label>
+              <select id="roomtype" name="roomtype">
+                <option value="Deluxe">Deluxe</option>
+                <option value="Superior">Superior</option>
+                <option value="Suite">Suite</option>
+              </select>
+            </li>
+
+            <li>
+              <label for="bedtype">Bed Type</label>
+              <select id="bedtype" name="bedtype">
+                <option value="Single">Single Bed</option>
+                <option value="Double">Double Bed</option>
+                <option value="Twin">Twin Bed</option>
+              </select>
+            </li>
+
+            <li>
+              <span class="label-inline">Breakfast</span>
+              <div class="inline-group">
+                <label><input type="radio" name="breakfast" value="with" checked="checked" /> With Breakfast</label>
+                <label><input type="radio" name="breakfast" value="without" /> Without Breakfast</label>
+              </div>
+            </li>
+          </ol>
+        </fieldset>
+
+        <fieldset class="section">
+          <legend>Payment</legend>
+          <ol class="form-list">
+            <li>
+              <label for="checkin">Check-in Date</label>
+              <input class="text" type="text" id="checkin" name="checkin" />
+            </li>
+
+            <li>
+              <label for="checkout">Check-out Date</label>
+              <input class="text" type="text" id="checkout" name="checkout" />
+            </li>
+
+            <li>
+              <label for="payment">Payment Method</label>
+              <select id="payment" name="payment">
+                <option value="cash">Cash</option>
+                <option value="credit">Credit Card</option>
+                <option value="debit">Debit</option>
+              </select>
+            </li>
+          </ol>
+        </fieldset>
+
+
+        <div class="actions">
+          <button type="submit" class="button">Submit</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
